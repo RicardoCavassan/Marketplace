@@ -72,6 +72,41 @@ section#banner {
     background: rgb(70, 70, 70);
 }
 
+section#banner div#carrossel{
+    display: flex;
+    align-content: center;    
+    justify-content: space-around;
+}
+
+section#banner div#carrossel div.imagem-carrossel{
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+
+#img1 {
+    background: red;
+}
+
+#img2 {
+    background: green;
+}
+
+#img3 {
+    background: blue;
+}
+
+.item-carrossel {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 70);
+}
+
+#active {
+    background-color: rgb(0, 191, 255);
+}
+
 section#produtos{
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +126,7 @@ section#produtos div.produto {
     margin-bottom: 20px;
 }
 
-section#produtos div.produto div.imagem{
+section#produtos div.produto div.imagem-produto{
     margin: 25px;
     border-radius: 10px;
     background: white;

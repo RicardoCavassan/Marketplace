@@ -4,30 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Marketplace</title>
-        <script src="https://kit.fontawesome.com/d2fc22ae06.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/d2fc22ae06.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
             <nav>
                 <i class="fa-solid fa-cart-shopping" id="logo"></i>
                 <ul class="nav">                    
-                    <li><a href="#home" id="home" class="active">Home</a></li>
-                    <li><a href="#prod" id="prod">Produtos</a></li>
-                    <li><a href="#cont" id="contatos">Contatos</a></li>
-                    <li><a href="#sobr" id="sobre">Sobre</a></li>
+                    <li><a href="#" id="home" class="active">Home</a></li>
+                    <li><a href="#" id="prod">Produtos</a></li>
+                    <li><a href="#" id="contatos">Contatos</a></li>
+                    <li><a href="#" id="sobre">Sobre</a></li>
                 </ul>
                 <input type="search" id="busca" placeholder="Use aqui para procurar" />
             </nav>
         </header>
 
         <section id="banner">
-            
+            <div id="carrossel">
+                <div class="imagem-carrossel" id="img1"></div>
+                <div class="imagem-carrossel" id="img2"></div>
+                <div class="imagem-carrossel" id="img3"></div>
+                <div class="controle">
+                    <div class="item-carrossel" id="active"></div>
+                    <div class="item-carrossel" ></div>
+                </div>
+            </div>
         </section>
 
         <section id="produtos">
             <div class="produto" id="prod1">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 1</span>
                     <span class="preco">R$ 000,00</span>
@@ -36,7 +45,7 @@
             </div>
 
             <div class="produto" id="prod2">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 2</span>
                     <span class="preco">R$ 000,00</span>
@@ -45,7 +54,7 @@
             </div>
 
             <div class="produto" id="prod3">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 3</span>
                     <span class="preco">R$ 000,00</span>
@@ -54,7 +63,7 @@
             </div>
 
             <div class="produto" id="prod4">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 4</span>
                     <span class="preco">R$ 000,00</span>
@@ -63,7 +72,7 @@
             </div>
 
             <div class="produto" id="prod5">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 5</span>
                     <span class="preco">R$ 000,00</span>
@@ -72,7 +81,7 @@
             </div>
 
             <div class="produto" id="prod6">
-                <div class="imagem"></div>
+                <div class="imagem-produto"></div>
                 <div class="sobre">
                     <span class="nome">Produto 6</span>
                     <span class="preco">R$ 000,00</span>
