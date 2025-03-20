@@ -1,18 +1,31 @@
-window.onload = function() {
-    const imagens = document.querySelectorAll('.imagem-carrossel');
-    let imagemAtiva = 0;
-    imagens[imagemAtiva].style.display='block';
+const imagens = document.querySelectorAll('.imagem-carrossel');
+const itens = document.querySelectorAll('.item-carrossel');
+let imagemAtiva = 0;
+imagens[imagemAtiva].style.display='block';
+itens[imagemAtiva].id='active';
 
-    function mudaImagem(){
+function mudaImagem(item){
+    if (typeof item !== 'undefined'){
         imagens[imagemAtiva].style.display='none';
-        if (imagemAtiva<imagens.length-1)
+        itens[imagemAtiva].id='';
+        imagemAtiva=item;
+        imagens[imagemAtiva].style.display='block';
+        itens[imagemAtiva].id='active';
+    }
+    else {
+        imagens[imagemAtiva].style.display='none';
+        if (imagemAtiva<imagens.length-1){
+            itens[imagemAtiva].id='';
             imagens[++imagemAtiva].style.display='block';
+            itens[imagemAtiva].id='active';
+        }
         else{
+            itens[imagemAtiva].id='';
             imagemAtiva=0;
             imagens[imagemAtiva].style.display='block';
+            itens[imagemAtiva].id='active';
         }
-        console.log(imagemAtiva);
     }
-
-    const intervalo = setInterval(mudaImagem, 3000);
 }
+
+const intervalo = setInterval(mudaImagem, 5000);
